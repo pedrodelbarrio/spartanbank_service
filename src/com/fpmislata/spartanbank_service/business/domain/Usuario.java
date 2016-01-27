@@ -7,16 +7,19 @@ package com.fpmislata.spartanbank_service.business.domain;
 public class Usuario {
 
     private int idUsuario;
-    private String nombre, encryptedPassword;
+    private String nickName, encryptedPassword, nombre, nif, email;
     private Rol rol;
 
     public Usuario() {
     }
 
-    public Usuario(int idUsuario, String nombre, String encryptedPassword, Rol rol) {
+    public Usuario(int idUsuario, String nickName, String encryptedPassword, String nombre, String nif, String email, Rol rol) {
         this.idUsuario = idUsuario;
-        this.nombre = nombre;
+        this.nickName = nickName;
         this.encryptedPassword = encryptedPassword;
+        this.nombre = nombre;
+        this.nif = nif;
+        this.email = email;
         this.rol = rol;
     }
 
@@ -28,12 +31,12 @@ public class Usuario {
         this.idUsuario = idUsuario;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNickName() {
+        return nickName;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
     }
 
     public String getEncryptedPassword() {
@@ -42,6 +45,30 @@ public class Usuario {
 
     public void setEncryptedPassword(String encryptedPassword) {
         this.encryptedPassword = encryptedPassword;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getNif() {
+        return nif;
+    }
+
+    public void setNif(String nif) {
+        this.nif = nif;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public Rol getRol() {
