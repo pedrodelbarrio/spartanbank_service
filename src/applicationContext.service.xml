@@ -13,5 +13,6 @@
     <bean class="com.fpmislata.spartanbank_service.persistence.dao.impl.jdbc.EntidadBancariaDAOImplJDBC" />
     <bean class="com.fpmislata.spartanbank_service.business.service.impl.EntidadBancariaServiceImpl" />
     <bean class="com.fpmislata.spartanbank_service.security.impl.AuthorizationImplDummy" />
+    <bean class="com.fpmislata.spartanbank_service.persistence.jdbc.impl.DataSourceFactoryImpl" />
  
 </beans>
